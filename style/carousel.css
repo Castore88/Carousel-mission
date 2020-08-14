@@ -1,0 +1,349 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 20px auto;
+  background-color: #fafafa;
+  font-family: "Poppins", sans-serif;
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 48px;
+  margin-top: 75px;
+}
+
+header {
+  margin: 50px 25px;
+  max-width: 400px;
+  text-align: center;
+}
+
+h1 {
+  margin: 0;
+}
+
+header h1:first-child {
+  font-weight: 200;
+}
+
+p {
+  color: #a3a5ae;
+}
+
+img {
+  height: 250px;
+  width: 100%;
+}
+
+.carousel-container {
+  margin: 0 auto;
+  /* width: 60%; */
+  /* margin: 5% auto; */
+  background-size: cover;
+  /* order: 5px solid black; */
+  overflow: hidden;
+  margin: 20px;
+}
+
+.carousel-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+button,
+i {
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.btns {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100vw;
+  margin-top: 25px;
+  position: absolute;
+  bottom: 0;
+}
+
+.btn {
+  margin: 20px;
+}
+
+.box {
+  margin: 15px;
+  width: 350px;
+  background-color: #fff;
+  padding: 30px;
+  -webkit-box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19),
+    0 6px 6px rgba(0, 0, 0, 0.23);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  border-radius: 5px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 100%;
+}
+
+footer {
+  display: inline-block;
+  position: absolute;
+  bottom: 10px;
+  width: 100%;
+}
+
+footer h3 {
+  text-align: center;
+  text-transform: uppercase;
+  color: #059999;
+}
+
+@media (max-width: 900px) {
+  body {
+    overflow: scroll;
+  }
+  .wrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100%;
+    margin-top: 0;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .btn {
+    margin-top: 0;
+    position: relative;
+  }
+  .carousel-container {
+    margin: 0 auto;
+    /* width: 60%; */
+    /* margin: 5% auto; */
+    background-size: cover;
+    /* overflow: hidden; */
+    position: relative;
+  }
+  .carousel-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+  }
+  .btn-left {
+    left: 11px;
+    margin-right: 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  body {
+    overflow: scroll;
+  }
+  img {
+    height: 200px;
+  }
+  .wrapper {
+    margin-top: 0;
+  }
+  .btn {
+    margin: 10px;
+    display: block;
+    margin-top: 0;
+    position: relative;
+  }
+  .btns {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    width: 100vw;
+  }
+  .box {
+    height: 440px;
+    margin-bottom: 2.1em;
+  }
+  .carousel-container {
+    margin: 0 auto;
+    /* width: 60%; */
+    /* margin: 5% auto; */
+    background-size: cover;
+    /* overflow: hidden; */
+    position: relative;
+  }
+  .carousel-slide {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    /* width: 100%; */
+    height: 100%;
+  }
+}
+
+.card {
+  overflow: hidden;
+  background: white;
+  border-radius: 0.25rem;
+  max-width: 380px;
+  width: 380px;
+  -webkit-box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05),
+    0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  box-shadow: 0 15px 30px 0 rgba(0, 0, 0, 0.05),
+    0 5px 15px 0 rgba(0, 0, 0, 0.05);
+  -webkit-transition: ease box-shadow 0.3s;
+  transition: ease box-shadow 0.3s;
+}
+
+.card:hover {
+  -webkit-box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.08),
+    0 5px 25px 0 rgba(0, 0, 0, 0.08);
+  box-shadow: 0 15px 60px 0 rgba(0, 0, 0, 0.08),
+    0 5px 25px 0 rgba(0, 0, 0, 0.08);
+}
+
+.card-detail {
+  padding: 0.5rem 1rem;
+}
+
+.card-detail h3 {
+  font-size: 1.5rem;
+  margin-bottom: none;
+  line-height: 0.09;
+}
+
+.card-detail p {
+  line-height: 1.3rem;
+}
+
+.card-image {
+  margin: 0;
+  padding: 0;
+  height: 200px;
+  overflow: hidden;
+}
+
+.card-image img {
+  max-width: 100%;
+  height: auto;
+}
+
+.loading {
+  position: relative;
+  background-color: #e2e2e2;
+}
+
+.loading.card-image {
+  border-radius: 0;
+}
+
+.loading::after {
+  display: block;
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-transform: translateX(-100%);
+  transform: translateX(-100%);
+  background: -webkit-gradient(
+    linear,
+    left top,
+    right top,
+    from(transparent),
+    color-stop(rgba(255, 255, 255, 0.2)),
+    to(transparent)
+  );
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  -webkit-animation: loading 1.5s infinite;
+  animation: loading 1.5s infinite;
+}
+
+@-webkit-keyframes loading {
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+@keyframes loading {
+  100% {
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+  }
+}
+
+.card-title.loading {
+  height: 1.8rem;
+}
+
+.card-image.image {
+  max-width: 100%;
+  height: auto;
+}
+
+.card-description.loading {
+  height: 80px;
+}
+
+.cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.cards section {
+  margin: 20px;
+}
+/*# sourceMappingURL=carousel.css.map */
